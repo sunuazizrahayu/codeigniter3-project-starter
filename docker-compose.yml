@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  ci3-app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: ci3
+    #env_file:
+    #  - .env
+    ports:
+      - 8080:8080
+    #volumes:
+    #  - .:/var/www/html
+    #  - /var/www/html/vendor
