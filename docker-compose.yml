@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
+    image: ci3
     container_name: ci3
     #env_file:
     #  - .env
