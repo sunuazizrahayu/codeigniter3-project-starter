@@ -11,9 +11,9 @@ services:
     #  - .env
     ports:
       - 8080:80
-    #volumes:
-    #  - .:/var/lib/nginx/html/
-    #  - /var/www/html/vendor
+    volumes:
+      - .:/var/www/html
+    #  - /var/www/html/application/vendor
 
   db:
     container_name: ci3-db
